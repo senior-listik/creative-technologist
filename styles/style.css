@@ -1,0 +1,158 @@
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/inter-v12-latin-regular.woff2') format('woff2'),
+        url('../fonts/inter-v12-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/inter-v12-latin-500.woff2') format('woff2'),
+        url('../fonts/inter-v12-latin-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('../fonts/inter-v12-latin-600.woff2') format('woff2'),
+        url('../fonts/inter-v12-latin-600.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/inter-v12-latin-700.woff2') format('woff2'),
+        url('../fonts/inter-v12-latin-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/heebo-v21-latin-regular.woff2') format('woff2'),
+        url('../fonts/heebo-v21-latin-regular.woff') format('woff');
+}
+
+/* Colors */
+:root {
+    --primary-color: #FFFFFF;
+    --bg-color: #E5E5E5;
+    --recent-color: #EDF7FA;
+    --primary-text-color: #21243D;
+    --secondary-text-color: #8695A4;
+    --accent-color: #FF6464;
+    --link-color: #00A8CC;
+    --date-container-color: #2A326F;
+    --img-shadow-color: #EDF7FA;
+}
+ul, li, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html {
+    background: var(--bg-color);
+}
+body {
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: var(--primary-color);
+    color: var(--primary-text-color);
+    max-width: 1440px;
+}
+        /* HEADER */
+.header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 35px 0 35px 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-main {
+    display: flex;
+    gap: 24px;
+    
+}
+.nav-main-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+.nav-main-link:hover {
+    color: var(--accent-color);
+}
+        /* WRAPPER */
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.hero {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+.hero-container {
+    max-width: 548px;
+} 
+.img-container {
+    width: 328px;
+    height: 319px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.25;  
+}
+.hero-text {
+    margin: 24px 0;
+}
+.hero-btn {
+    width: 178px;
+    height: 48px;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    border: 0;
+    border-radius: 4px;
+}
+.hero-img {
+    object-fit: cover;
+    margin: 0 auto;
+}
+.wrapper .recent {
+    background-color: var(--recent-color);
+    position: relative;
+    padding: 40px 0;
+}
+.recent-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+}
+.recent-link {
+    position: absolute;
+    top: 46px;
+    right: 0;
+}
+.recent-list {}
